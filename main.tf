@@ -1,5 +1,5 @@
 # Demostration of pass agruments in module using variable
-module "module-example" {
+module "terraform-module" {
   source = "github.com/saravananajay/terraform-module.git"
 
     region                     = "${var.region}"
@@ -20,8 +20,3 @@ module "module-example" {
 #
 # }
 
-
-
-output "instance_public_ip_address"{
-  value="${module.module-example.instance_ip}"
-}
